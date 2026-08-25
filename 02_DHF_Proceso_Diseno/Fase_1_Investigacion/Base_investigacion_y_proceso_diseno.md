@@ -74,7 +74,7 @@ La oportunidad de diseno se ubica entre el simulador puramente teorico y el anal
 
 ## 2. Marco teorico, conceptual y estado del arte
 
-El desarrollo completo, con citas en el texto y 40 referencias verificables, se encuentra en [Marco_teorico_estado_del_arte.md](Marco_teorico_estado_del_arte.md). La bibliografia prioriza fuentes de 2016 a 2026; las excepciones son normas o documentos vigentes indispensables para el alcance del proyecto.
+El desarrollo completo, con citas en el texto y referencias verificables, se encuentra en [Bibliografia consolidada](REFERENTES%20CONCEPTUALES%20Y%20CONTEXTUALES/Bibliografia%20consolidada.md). La bibliografia prioriza fuentes de 2016 a 2026; las excepciones son normas o documentos vigentes indispensables para el alcance del proyecto.
 
 ### 2.1 Equipo electromedico y seguridad electrica
 
@@ -109,7 +109,7 @@ La gestion del riesgo debe atravesar el proceso, no aparecer solo al final. Ante
 
 ## 3. Metodologia de indagacion social y de necesidades
 
-El protocolo completo, los instrumentos, las consideraciones eticas, la lista inicial de necesidades y el plan de analisis estan en [Indagacion_social_y_necesidades.md](Indagacion_social_y_necesidades.md). Ninguna necesidad se considera validada ni recibe peso definitivo hasta contar con evidencia de campo.
+El protocolo completo, los instrumentos, las consideraciones eticas, la lista inicial de necesidades y el plan de analisis estan en [Instrumentos de indagacion](INDAGACION%20SOCIAL/Instrumentos%20de%20indagacion.md). Ninguna necesidad se considera validada ni recibe peso definitivo hasta contar con evidencia de campo.
 
 ### 3.1 Enfoque
 
@@ -204,4 +204,4 @@ Las alternativas conceptuales pueden diferir en el objeto de ensayo: (a) banco c
 
 Las normas son documentos con derechos de autor: se deben consultar por acceso institucional o compra legal y citarse, pero no copiar tablas, limites ni figuras extensas en el informe.
 
-La bibliografia anotada, en formato APA 7 y con enlaces verificables, se consolida en [Marco_teorico_estado_del_arte.md](Marco_teorico_estado_del_arte.md#referencias). Antes de la entrega final se debe verificar el acceso institucional a las normas IEC/ISO y actualizar las fichas comerciales y cotizaciones con fecha de consulta.
+La bibliografia anotada, en formato APA 7 y con enlaces verificables, se consolida en [Bibliografia consolidada](REFERENTES%20CONCEPTUALES%20Y%20CONTEXTUALES/Bibliografia%20consolidada.md#referencias). Antes de la entrega final se debe verificar el acceso institucional a las normas IEC/ISO y actualizar las fichas comerciales y cotizaciones con fecha de consulta.

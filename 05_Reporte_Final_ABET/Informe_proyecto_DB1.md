@@ -68,7 +68,7 @@ En el plano academico, integra electronica, instrumentacion, gestion del riesgo 
 
 IEC 60601-1 es el referente general de seguridad basica y desempeno esencial de equipos electromedicos. IEC 62353 se enfoca en pruebas recurrentes y posteriores a reparacion. Por lo tanto, sus propositos no son intercambiables: la primera norma sirve de marco para la seguridad del equipo y la segunda para actividades de prueba durante su vida util (IEC, 2020, 2014).
 
-Los analizadores comerciales integran, con distintos niveles de automatizacion, funciones tales como pruebas de continuidad de tierra de proteccion, aislamiento y corrientes de fuga. Fluke Biomedical ESA615 y Rigel 288+ son referentes funcionales y de seguridad; Pronk Safe-T Sim aporta una referencia de simulacion. No son competidores equivalentes del prototipo didactico: el benchmark compara pruebas, interfaces, accesorios, protecciones, uso previsto, exactitud declarada y costo cotizado, mientras que el prototipo prioriza comprensión, documentacion y escenarios seguros. El análisis completo está en [Marco teórico y estado del arte](../02_DHF_Proceso_Diseno/Fase_1_Investigacion/Marco_teorico_estado_del_arte.md).
+Los analizadores comerciales integran, con distintos niveles de automatizacion, funciones tales como pruebas de continuidad de tierra de proteccion, aislamiento y corrientes de fuga. Fluke Biomedical ESA615 y Rigel 288+ son referentes funcionales y de seguridad; Pronk Safe-T Sim aporta una referencia de simulacion. No son competidores equivalentes del prototipo didactico: el benchmark compara pruebas, interfaces, accesorios, protecciones, uso previsto, exactitud declarada y costo cotizado, mientras que el prototipo prioriza comprensión, documentacion y escenarios seguros. El análisis completo está en [Estado del arte](../02_DHF_Proceso_Diseno/Fase_1_Investigacion/REFERENTES%20CONCEPTUALES%20Y%20CONTEXTUALES/Estado%20del%20arte.md).
 
 ## 1.5 Marco teorico y normativo
 
@@ -95,7 +95,7 @@ La arquitectura abierta implica documentar interfaces, esquematicos, firmware, l
 
 ### Educacion practica y diseno centrado en usuarios
 
-El prototipo se plantea como una actividad de aprendizaje activo: el estudiante predice, configura, ejecuta en un escenario seguro, registra y explica el resultado. La literatura reciente sobre aprendizaje basado en proyectos, retos y bioinstrumentacion respalda evaluar desempeño observable, retroalimentación y reflexión, no solo satisfacción. La indagación con estudiantes, docentes y personal técnico permitirá adaptar la experiencia al contexto real de laboratorio. El desarrollo completo, incluido el marco de arquitectura abierta, metrología, educación y diseño centrado en usuarios, se encuentra en [Marco teórico y estado del arte](../02_DHF_Proceso_Diseno/Fase_1_Investigacion/Marco_teorico_estado_del_arte.md).
+El prototipo se plantea como una actividad de aprendizaje activo: el estudiante predice, configura, ejecuta en un escenario seguro, registra y explica el resultado. La literatura reciente sobre aprendizaje basado en proyectos, retos y bioinstrumentacion respalda evaluar desempeño observable, retroalimentación y reflexión, no solo satisfacción. La indagación con estudiantes, docentes y personal técnico permitirá adaptar la experiencia al contexto real de laboratorio. El desarrollo completo, incluido el marco de arquitectura abierta, metrología, educación y diseño centrado en usuarios, se encuentra en [Marco teórico](../02_DHF_Proceso_Diseno/Fase_1_Investigacion/REFERENTES%20CONCEPTUALES%20Y%20CONTEXTUALES/Marco%20teorico.md).
 
 # 2. LISTA DE NECESIDADES
 
@@ -103,7 +103,7 @@ La lista se completa a partir de entrevistas, encuestas, observacion e inventari
 
 ## 2.1 Proceso de indagacion
 
-El protocolo detallado, instrumentos, medidas éticas, criterios de análisis y matriz de trazabilidad están en [Indagación social y necesidades](../02_DHF_Proceso_Diseno/Fase_1_Investigacion/Indagacion_social_y_necesidades.md). Los resultados deben completarse con datos reales y anonimizados; no se declararán necesidades validadas antes de aplicar los instrumentos.
+El protocolo detallado, instrumentos, medidas éticas, criterios de análisis y matriz de trazabilidad están en [Indagación social](../02_DHF_Proceso_Diseno/Fase_1_Investigacion/INDAGACION%20SOCIAL/indagacion%20social.md). Los resultados deben completarse con datos reales y anonimizados; no se declararán necesidades validadas antes de aplicar los instrumentos.
 
 **Entrevistas a docentes o personal tecnico**
 
@@ -222,4 +222,4 @@ Las conclusiones se redactaran al final y responderan los objetivos con evidenci
 
 # REFERENCIAS
 
-La bibliografía académica y normativa consolidada (40 referencias APA 7 con enlaces verificables) está en [Marco teórico, conceptual y estado del arte](../02_DHF_Proceso_Diseno/Fase_1_Investigacion/Marco_teorico_estado_del_arte.md#referencias). Al consolidar la versión final para entrega, esta lista debe incorporarse íntegramente a esta sección y verificarse contra las citas realmente utilizadas.
+La bibliografía académica y normativa consolidada está en [Bibliografía consolidada](../02_DHF_Proceso_Diseno/Fase_1_Investigacion/REFERENTES%20CONCEPTUALES%20Y%20CONTEXTUALES/Bibliografia%20consolidada.md#referencias). Al consolidar la versión final para entrega, esta lista debe incorporarse íntegramente a esta sección y verificarse contra las citas realmente utilizadas.

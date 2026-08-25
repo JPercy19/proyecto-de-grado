@@ -29,7 +29,6 @@ El proyecto desarrolla un prototipo didactico para laboratorio. No sustituye un 
 - [`Arbol de objetivos`](02_DHF_Proceso_Diseno/Fase_1_Investigacion/NECESIDADES%20DEL%20OBJETIVO/Arbol%20de%20objetivos.md)
 - [`Marco teorico`](02_DHF_Proceso_Diseno/Fase_1_Investigacion/REFERENTES%20CONCEPTUALES%20Y%20CONTEXTUALES/Marco%20teorico.md)
 - [`Estado del arte`](02_DHF_Proceso_Diseno/Fase_1_Investigacion/REFERENTES%20CONCEPTUALES%20Y%20CONTEXTUALES/Estado%20del%20arte.md)
-- [`Indagacion social y necesidades`](02_DHF_Proceso_Diseno/Fase_1_Investigacion/Indagacion_social_y_necesidades.md)
 - [`Informe del proyecto conforme a la guia DB1`](05_Reporte_Final_ABET/Informe_proyecto_DB1.md)
 
 ## Proximos insumos
