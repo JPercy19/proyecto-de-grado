@@ -8,6 +8,14 @@
 
 Esta delimitacion permite un proyecto realizable y eticamente defendible: se aprende el principio, la secuencia de ensayo y la interpretacion de resultados, sin afirmar una certificacion que exige ensayos, trazabilidad metrologica y evaluacion formal fuera del alcance de un prototipo academico.
 
+## Documentos de la fase de investigacion
+
+1. [Indagacion social](01_Indagacion_social.md)
+2. [Necesidades y objetivos de diseno](02_Necesidades_y_objetivos_de_diseno.md)
+3. [Referentes conceptuales](03_Referentes_conceptuales.md)
+4. [Referentes contextuales y estado del arte](04_Referentes_contextuales_estado_del_arte.md)
+5. [Marco teorico, conceptual y estado del arte con bibliografia consolidada](Marco_teorico_estado_del_arte.md)
+
 ## 1. Introduccion
 
 ### 1.1 Descripcion y formulacion del problema
@@ -62,7 +70,9 @@ Los analizadores comerciales de seguridad electrica integran, con distintos nive
 
 La oportunidad de diseno se ubica entre el simulador puramente teorico y el analizador profesional cerrado: una plataforma didactica, modular, con interfaces explicables y con restricciones que impidan que se confunda con un instrumento apto para liberar equipos clinicos.
 
-## 2. Marco teorico y normativo
+## 2. Marco teorico, conceptual y estado del arte
+
+El desarrollo completo, con citas en el texto y 40 referencias verificables, se encuentra en [Marco_teorico_estado_del_arte.md](Marco_teorico_estado_del_arte.md). La bibliografia prioriza fuentes de 2016 a 2026; las excepciones son normas o documentos vigentes indispensables para el alcance del proyecto.
 
 ### 2.1 Equipo electromedico y seguridad electrica
 
@@ -95,7 +105,9 @@ En este proyecto, "arquitectura abierta" significa que se documentan las interfa
 
 La gestion del riesgo debe atravesar el proceso, no aparecer solo al final. Antes de construir se elaborara una matriz de peligros con, como minimo: contacto con tension de red, energia residual, conexion incorrecta, falla del aislamiento, lectura erronea, uso del prototipo como instrumento clinico y modificacion no autorizada. Para cada peligro se definiran controles de diseno, controles de proteccion, advertencias, verificacion y riesgo residual.
 
-## 3. Metodologia de indagacion
+## 3. Metodologia de indagacion social y de necesidades
+
+El protocolo completo, los instrumentos, las consideraciones eticas, la lista inicial de necesidades y el plan de analisis estan en [Indagacion_social_y_necesidades.md](Indagacion_social_y_necesidades.md). Ninguna necesidad se considera validada ni recibe peso definitivo hasta contar con evidencia de campo.
 
 ### 3.1 Enfoque
 
@@ -186,16 +198,8 @@ flowchart LR
 
 Las alternativas conceptuales pueden diferir en el objeto de ensayo: (a) banco con simuladores de fallos de baja energia, (b) adaptador de demostracion supervisado para un equipo no clinico autorizado, o (c) plataforma hibrida con simulacion y medicion de parametros seguros. La seleccion debe priorizar seguridad, valor pedagogico, viabilidad, costo y posibilidad de verificacion.
 
-## 7. Evidencia y referencias iniciales
+## 7. Evidencia y referencias
 
 Las normas son documentos con derechos de autor: se deben consultar por acceso institucional o compra legal y citarse, pero no copiar tablas, limites ni figuras extensas en el informe.
 
-International Electrotechnical Commission. (2014). *IEC 62353:2014 Medical electrical equipment - Recurrent test and test after repair of medical electrical equipment*. https://webstore.iec.ch/en/publication/6913
-
-International Electrotechnical Commission. (2020). *IEC 60601-1:2005+AMD1:2012+AMD2:2020 Medical electrical equipment - Part 1: General requirements for basic safety and essential performance*. https://webstore.iec.ch/en/publication/2612
-
-Fluke Biomedical. (s. f.). *Electrical safety standards and basic testing*. https://www.flukebiomedical.com/blog/electrical-safety-standards-and-basic-testing
-
-Rigel Medical. (s. f.). *A practical guide to IEC 60601*. https://www.rigelmedical.com/knowledge-base/a-practical-guide-to-iec-60601
-
-Ulrich, K. T., Eppinger, S. D., & Yang, M. C. (2020). *Product design and development* (7th ed.). McGraw-Hill.
+La bibliografia anotada, en formato APA 7 y con enlaces verificables, se consolida en [Marco_teorico_estado_del_arte.md](Marco_teorico_estado_del_arte.md#referencias). Antes de la entrega final se debe verificar el acceso institucional a las normas IEC/ISO y actualizar las fichas comerciales y cotizaciones con fecha de consulta.
