@@ -62,6 +62,39 @@ La oportunidad de diseño esta entre un simulador sin medicion explicable y un a
 | Una lectura educativa no equivale a una medicion de conformidad. | Practicar responsablemente sin confundir el alcance del sistema. | La carcasa, interfaz y reporte incluiran la limitacion de uso didactico. |
 | El diseño centrado en usuarios exige evidencia de contexto. | Ajustar el banco a tiempo, espacio, equipos y conocimientos disponibles. | Los objetivos de desempeño, costo y preparacion se fijaran tras encuesta, entrevistas e inventario. |
 
+## Lectura critica de la bibliografia
+
+La bibliografia se utiliza como una red de evidencia y no como una lista decorativa. Las normas delimitan el lenguaje técnico y los riesgos; las fuentes metrológicas delimitan lo que puede afirmarse a partir de una medición; los referentes comerciales permiten construir un benchmark sin reclamar equivalencia; y la literatura pedagógica y de diseño determina cómo se evaluará el valor de la plataforma.
+
+| Grupo de fuentes | Referencias principales | Aporte para el proyecto | Decisión que sustenta |
+|---|---|---|---|
+| Seguridad eléctrica | IEC 60601-1, IEC 62353, IEC 60990, IEC 60479-1. | Diferencian seguridad de diseño, prueba recurrente, método de medición y fundamento fisiológico del peligro. | Separar el alcance educativo de la certificación y documentar cada configuración de práctica. |
+| Riesgo y calidad | ISO 14971, ISO/TR 24971, ISO 31000, ISO 31010, ISO 13485. | Proveen proceso para identificar peligros, evaluar alternativas, documentar controles y gestionar cambios. | Mantener matriz de riesgos, criterios de selección y control de versiones. |
+| Metrología | ISO/IEC 17025, JCGM 100, BIPM, ILAC P10, P14 y G8. | Explican trazabilidad, incertidumbre, unidades y reglas de decisión. | Reportar resultados como didácticos y no emitir “aprobado/rechazado” clínico. |
+| Usabilidad y factores humanos | IEC 62366-1, ISO 9241-210, FDA. | Identifican usuario, tarea crítica, error de uso y mitigación. | Diseñar conectores diferenciados, guías, advertencias y pruebas de usabilidad. |
+| Regulación colombiana | Decreto 4725 de 2005, Resolución 4816 de 2008, INVIMA. | Contextualizan uso previsto, vigilancia y límites regulatorios. | Comunicar que el banco no es un dispositivo médico comercial ni herramienta de liberación. |
+| Hardware abierto | Chagas; Pearce; Oellermann et al. | Relacionan apertura con acceso, reparación, documentación, sostenibilidad y comunidad. | Publicar módulos seguros, BOM, firmware y protocolo de cambios. |
+| Benchmark técnico | Fluke ESA615, Rigel 288+, Pronk Safe-T Sim. | Muestran prácticas de interfaz, secuencia, registro, automatización y escenarios. | Comparar funciones documentadas sin copiar arquitectura ni reclamar equivalencia. |
+| Pedagogía | Deslauriers; NASEM; Lavado-Anguera et al.; Galdames-Calderon et al. | Fundamentan aprendizaje activo, proyectos, retos, retroalimentación y evaluación. | Evaluar tareas y explicaciones, no solo satisfacción. |
+| Educación biomédica | Santos-Diaz et al.; Nandram y Foster. | Vinculan retos y kits con bioinstrumentación, currículo, accesibilidad y mentoría. | Integrar guía docente, rúbrica, escenarios y medición de aprendizaje. |
+| Proceso de diseño | Design Council; Ulrich et al. | Organizan descubrimiento, requisitos, conceptos, selección, arquitectura y pruebas. | Usar Casa de la Calidad, matriz morfológica y selección ponderada. |
+
+### Aportes individuales para la redaccion
+
+1. **IEC 60601-1** aporta la visión de seguridad básica y desempeño esencial; se cita al describir peligros, partes aplicadas y límites de alcance.
+2. **IEC 62353** aporta la lógica de pruebas recurrentes y posteriores a reparación; se cita al justificar la secuencia de práctica.
+3. **IEC 60990** aporta el método de corrientes de contacto y protección; se cita al explicar por qué una lectura depende de la red y el montaje.
+4. **IEC 60479-1** aporta la relación entre corriente y efectos fisiológicos; se cita para justificar barreras y simulación segura.
+5. **ISO 14971 e ISO/TR 24971** aportan la gestión de riesgo; se citan en la matriz de peligros y controles.
+6. **ISO/IEC 17025, JCGM 100 e ILAC** aportan el límite entre una lectura didáctica y una declaración de conformidad; se citan en el protocolo de resultados.
+7. **IEC 62366-1, ISO 9241-210 y FDA** aportan análisis de tareas y errores de uso; se citan al diseñar interfaz y prueba de usabilidad.
+8. **Chagas, Pearce y Oellermann et al.** aportan el fundamento de la arquitectura abierta responsable; se citan al definir documentación, reparación y control de cambios.
+9. **Deslauriers y NASEM** aportan criterios de evaluación de aprendizaje; se citan en el protocolo pretest-práctica-postest.
+10. **Lavado-Anguera, Galdames-Calderon y Santos-Diaz** aportan criterios para aprendizaje basado en proyectos y retos; se citan en las guías de práctica y rúbricas.
+11. **Nandram y Foster** aportan criterios para valorar un kit biomédico; se citan en el benchmark y en la evaluación de valor educativo.
+12. **Fluke, Rigel y Pronk** aportan referentes de función e interacción; se citan únicamente en el estado del arte y el benchmark.
+13. **Design Council y Ulrich et al.** aportan la estructura metodológica del proceso de diseño; se citan en cada transición entre fases.
+
 ## Referencias
 
 American Society for Engineering Education. (2025). *2025 ASEE annual conference and exposition proceedings*. https://peer.asee.org/

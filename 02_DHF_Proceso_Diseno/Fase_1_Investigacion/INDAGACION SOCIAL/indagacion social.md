@@ -47,9 +47,23 @@ Se utilizará un enfoque mixto y secuencial. La revisión documental permite con
 
 Las entrevistas se analizarán mediante categorías: seguridad, secuencia de práctica, comprensión conceptual, retroalimentación, recursos, tiempo, documentación y restricciones. En la encuesta se reportarán respuestas válidas, distribución por ítem y síntesis de preguntas abiertas. Los datos se anonimizan; no se incluirán nombres, códigos estudiantiles ni información clínica.
 
+## Profundizacion del enfoque de indagacion
+
+La indagación se fundamenta en diseño centrado en las personas. ISO 9241-210 propone comprender de forma explícita a los usuarios, las tareas y los entornos antes de adoptar una solución; IEC 62366-1 y FDA (2016) muestran que los errores de uso deben analizarse como parte del riesgo. En este proyecto, una conexión errónea, la interpretación de un valor fuera de contexto o la omisión de una advertencia son eventos de uso que pueden afectar la seguridad de la práctica y la calidad del aprendizaje.
+
+La participación de docentes y personal técnico permite contrastar las expectativas de los estudiantes con restricciones de seguridad, currículo y recursos. Las entrevistas no se usarán para “confirmar” una solución preseleccionada: se emplearán para identificar tareas críticas, errores frecuentes, vocabulario local, tiempo disponible y criterios que un docente considera evidencia de aprendizaje. La encuesta permitirá observar tendencias de la cohorte, pero sus resultados no reemplazarán la explicación cualitativa ni el inventario físico del laboratorio.
+
+El enfoque pedagógico se sustenta en Deslauriers et al. (2019), quienes diferencian la sensación de aprender del desempeño observado, y en NASEM (2018), que relaciona aprendizaje con conocimientos previos, retroalimentación y reflexión. Por esta razón, la indagación debe preguntar no solo si los estudiantes “quieren” un prototipo, sino qué pueden explicar, qué tareas no logran completar y qué retroalimentación necesitan. Las fuentes sobre PBL y CBL aportan que una práctica significativa necesita reto, acompañamiento y evaluación, por lo que se indagará también sobre roles docentes, tamaño de grupos y tiempo de mentoría.
+
+## Criterios de calidad y analisis de datos
+
+La calidad de la indagación se cuidará mediante triangulación. Una necesidad será más sólida cuando aparezca, por ejemplo, en entrevistas, encuesta e inventario, y cuando su formulación sea consistente con el marco de seguridad. Se conservará una matriz con código de evidencia, fecha, fuente, interpretación y decisión resultante. Las respuestas abiertas se codificarán sin nombres, agrupando temas como seguridad, comprensión, secuencia, retroalimentación, recursos, accesibilidad y documentación.
+
+La encuesta se describirá con número de respuestas válidas, perfil agregado de participantes, frecuencias por ítem y tendencia central de la escala. La muestra no se presentará como representativa de toda la ingeniería biomédica si se limita a una cohorte o institución. Las entrevistas se reportarán con citas anonimizadas y categorías; no se generalizará una opinión individual como una conclusión de la población.
+
 ## Instrumentos
 
-La encuesta y el guion de entrevista se encuentran desarrollados en [Indagacion_social_y_necesidades.md](Indagacion_social_y_necesidades.md). Antes de aplicarlos, deben ser revisados por el docente y por la instancia institucional que corresponda. El inventario debe incluir: espacio, tomas, protecciones, elementos disponibles, estado de los equipos, normas de uso, número de grupos, tiempo por sesión y condiciones de almacenamiento.
+La encuesta y el guion de entrevista se encuentran desarrollados en [Instrumentos de indagacion.md](Instrumentos%20de%20indagacion.md). Antes de aplicarlos, deben ser revisados por el docente y por la instancia institucional que corresponda. El inventario debe incluir: espacio, tomas, protecciones, elementos disponibles, estado de los equipos, normas de uso, número de grupos, tiempo por sesión y condiciones de almacenamiento.
 
 ## Resultado esperado de la fase
 
@@ -64,3 +78,11 @@ International Organization for Standardization. (2019). *ISO 14971:2019: Medical
 Lavado-Anguera, S., Velasco-Quintana, P.-J., & Terron-Lopez, M.-J. (2024). Project-based learning as an experiential pedagogical methodology in engineering education: A review of the literature. *Education Sciences, 14*(6), 617. https://doi.org/10.3390/educsci14060617
 
 Santos-Diaz, A., Montesinos, L., Barrera-Esparza, M., del Mar Perez-Desentis, M., & Salinas-Navarro, D. E. (2024). Implementing a challenge-based learning experience in a bioinstrumentation blended course. *BMC Medical Education, 24*, 528. https://doi.org/10.1186/s12909-024-05462-7
+
+International Electrotechnical Commission. (2020). *IEC 62366-1:2015/AMD1:2020: Medical devices—Part 1: Application of usability engineering to medical devices*. https://webstore.iec.ch/en/publication/66794
+
+International Organization for Standardization. (2019). *ISO 9241-210:2019: Ergonomics of human-system interaction—Part 210: Human-centred design for interactive systems*. https://www.iso.org/standard/77520.html
+
+National Academies of Sciences, Engineering, and Medicine. (2018). *How people learn II: Learners, contexts, and cultures*. National Academies Press. https://doi.org/10.17226/24783
+
+U.S. Food and Drug Administration. (2016). *Applying human factors and usability engineering to medical devices: Guidance for industry and Food and Drug Administration staff*. https://www.fda.gov/media/80481/download

@@ -31,6 +31,35 @@ La revisión de educación en ingeniería respalda una práctica donde el estudi
 
 La brecha no se formula como “no existen analizadores”, sino como la falta de una herramienta educativa que reúna simultáneamente: arquitectura explicable, escenarios controlados, documentación abierta, guía de práctica, registro de evidencias y separación clara entre aprendizaje y medición profesional. Esta formulación se validará con el inventario de laboratorio y con los hallazgos de usuarios; puede ajustarse si el contexto muestra una necesidad diferente.
 
+## Analisis critico de los referentes comerciales
+
+Fluke Biomedical ESA615 se toma como referente de una arquitectura profesional que integra pruebas de seguridad eléctrica, identificación y almacenamiento de datos. Su aporte al proyecto es mostrar que el procedimiento de prueba no termina con una cifra: se requiere asociar la actividad con un activo o escenario, una configuración y un registro. De este referente se derivan requisitos pedagógicos como una secuencia visible, separación entre interacción del usuario y conexiones de ensayo, e identificación de cada práctica. No se pretende copiar su electrónica, reproducir prestaciones ni afirmar equivalencia de exactitud o cobertura normativa.
+
+Rigel 288+ aporta un referente de portabilidad y de organización de procedimientos y resultados. El aspecto relevante no es replicar su formato físico, sino comprender que una práctica puede estructurarse como una secuencia configurable: selección de escenario, preparación, conexiones, ejecución, registro y revisión. Para el prototipo, esta lógica se traduce en reportes que conserven el contexto de la lectura. Cualquier comparación de rango, incertidumbre, protección o desempeño debe realizarse desde manuales vigentes y ensayos definidos, no desde una interpretación general de la ficha comercial.
+
+Pronk Safe-T Sim debe analizarse como un referente de automatización, perfiles configurables y reportes; no basta llamarlo “simulador”. Su aporte es inspirar escenarios controlados y retroalimentación según condiciones predefinidas. La decisión de diseño derivada es que la plataforma pueda crear fallas simuladas seguras y asociarlas a una explicación, no que alcance el desempeño o las certificaciones declaradas por ese producto.
+
+| Criterio de benchmark | Fluke ESA615 | Rigel 288+ | Pronk Safe-T Sim | Implicación para el prototipo |
+|---|---|---|---|---|
+| Uso previsto | Instrumento profesional de seguridad eléctrica. | Instrumento profesional portátil. | Plataforma comercial de prueba automatizada. | Declarar explícitamente uso didáctico y no clínico. |
+| Aporte observado | Flujo de prueba, identificación y registro. | Procedimientos y gestión de resultados. | Perfiles, automatización y reportes. | Construir una secuencia de práctica trazable. |
+| Arquitectura | Cerrada y orientada al servicio. | Cerrada y orientada al servicio. | Comercial y automatizada. | Exponer solo módulos de baja tensión y documentación segura. |
+| Comparación válida | Funciones documentadas y experiencia de uso. | Organización de protocolos. | Diseño de escenarios. | No comparar exactitud o conformidad sin pruebas. |
+
+## Aporte de la bibliografia al estado del arte
+
+El estado del arte no se limita a describir productos. IEC 60601-1, IEC 62353 e IEC 60990 establecen el vocabulario técnico que permite comparar funciones sin afirmar conformidad. ISO 14971 permite valorar las diferencias de seguridad entre una plataforma educativa y un instrumento de servicio. ISO/IEC 17025, JCGM e ILAC explican por qué el benchmark no debe presentar una lectura didáctica como medición trazable.
+
+Chagas (2018) aporta la justificación de acceso y adaptación de hardware abierto; Pearce (2017) añade sostenibilidad, documentación y soporte; Oellermann et al. (2022) vinculan la electrónica abierta con reproducción, reparación y comunidades de práctica. En conjunto, estas fuentes permiten evaluar “apertura” como documentación, mantenibilidad y control de versiones, no solo como acceso físico a circuitos.
+
+Deslauriers et al. (2019) y NASEM (2018) sustentan que el referente disímil no debe compararse únicamente por componentes: su valor es pedagógico y se observa en tareas, retroalimentación y reflexión. Las revisiones de Lavado-Anguera et al. (2024) y Galdames-Calderon et al. (2024) indican que proyectos y retos requieren problema auténtico, acompañamiento y evaluación coherente. Santos-Diaz et al. (2024) conecta este enfoque con bioinstrumentación; Nandram y Foster (2025) amplían el análisis a kits biomédicos y sus criterios de accesibilidad, currículo, seguridad, costo y evidencia de efectividad.
+
+## Brecha validable y contribucion esperada
+
+La brecha de diseño se define como la necesidad de una herramienta que combine cuatro dimensiones: seguridad controlada, explicabilidad de la arquitectura, documentación abierta y evaluación pedagógica. Los instrumentos profesionales resuelven con alta integración el servicio técnico; los materiales educativos resuelven aspectos de acceso y aprendizaje; el prototipo propuesto busca conectar ambas perspectivas sin confundirse con un analizador profesional.
+
+Esta contribución se validará con una comparación documentada y con usuarios del laboratorio. La plataforma será pertinente si permite ejecutar escenarios seguros, explicar cómo se configura una prueba, conservar evidencia de la práctica y demostrar mejora en tareas seleccionadas. No será suficiente que el circuito funcione; debe demostrar utilidad pedagógica, límites de seguridad claros y viabilidad para el contexto institucional.
+
 ## Referencias
 
 Chagas, A. M. (2018). Haves and have nots must find a better way: The case for open scientific hardware. *PLOS Biology, 16*(9), e3000014. https://doi.org/10.1371/journal.pbio.3000014
@@ -54,3 +83,13 @@ Oellermann, M., Jolles, J. W., Ortiz, D., Seabra, R., Wenzel, T., Wilson, H., & 
 Pearce, J. M. (2017). Emerging business models for open source hardware. *Journal of Open Hardware, 1*(1), 2. https://doi.org/10.5334/joh.4
 
 Santos-Diaz, A., Montesinos, L., Barrera-Esparza, M., del Mar Perez-Desentis, M., & Salinas-Navarro, D. E. (2024). Implementing a challenge-based learning experience in a bioinstrumentation blended course. *BMC Medical Education, 24*, 528. https://doi.org/10.1186/s12909-024-05462-7
+
+Deslauriers, L., McCarty, L. S., Miller, K., Callaghan, K., & Kestin, G. (2019). Measuring actual learning versus feeling of learning in response to being actively engaged in the classroom. *Proceedings of the National Academy of Sciences, 116*(39), 19251-19257. https://doi.org/10.1073/pnas.1821936116
+
+Fluke Biomedical. (s. f.). *ESA615 electrical safety analyzer*. https://www.flukebiomedical.com/products/electrical-safety-analyzers/esa615-electrical-safety-analyzer
+
+National Academies of Sciences, Engineering, and Medicine. (2018). *How people learn II: Learners, contexts, and cultures*. National Academies Press. https://doi.org/10.17226/24783
+
+Pronk Technologies. (s. f.). *Safe-T Sim electrical safety analyzer simulator*. https://www.pronktech.com/
+
+Rigel Medical. (s. f.). *Rigel 288+ electrical safety analyzer*. https://www.rigelmedical.com/product/406a910-288-plus/

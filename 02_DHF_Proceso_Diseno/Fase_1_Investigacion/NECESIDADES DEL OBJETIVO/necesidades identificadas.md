@@ -55,3 +55,24 @@ Las necesidades están redactadas desde el punto de vista de los usuarios y no i
 ## Priorizacion pendiente de campo
 
 La importancia relativa de N-01 a N-08 se obtendrá de la encuesta, entrevistas e inventario. La seguridad será una restricción y no se compensará con puntajes de costo o conveniencia. Las necesidades restantes se priorizarán mediante importancia de usuarios, frecuencia de evidencia, impacto pedagógico, viabilidad y costo; el resultado alimentará la Casa de la Calidad.
+
+## Fundamentacion de las necesidades
+
+N-01 y N-08 se derivan del marco de riesgo y metrología. ISO 14971 exige considerar peligros y controles durante el ciclo de vida; ISO/IEC 17025, JCGM e ILAC distinguen una práctica educativa de una medición que puede sostener una declaración de conformidad. Por ello, la seguridad de la práctica y la comunicación explícita de límites son restricciones: no pueden negociarse para mejorar costo, tamaño o número de funciones.
+
+N-02, N-03 y N-05 se fundamentan en aprendizaje activo y usabilidad. Deslauriers et al. (2019) respaldan evaluar desempeño, mientras que NASEM (2018) resalta conocimientos previos, retroalimentación y metacognición. ISO 9241-210, IEC 62366-1 y FDA orientan el análisis de tareas y errores previsibles. En términos de diseño, estas fuentes justifican una secuencia visible, verificaciones antes de iniciar, explicación del resultado y un registro que permita reconstruir la práctica.
+
+N-04 y N-07 se sustentan en hardware abierto y desarrollo de producto. Chagas (2018), Pearce (2017) y Oellermann et al. (2022) justifican documentación, reparabilidad, mantenimiento y adaptación local, pero también muestran que la apertura necesita control de versiones y disponibilidad de componentes. Design Council (2019) y Ulrich et al. (2020) aportan el proceso para convertir estas necesidades en atributos medibles y seleccionar una arquitectura sin depender de una preferencia previa.
+
+## Regla de traduccion de necesidad a requisito
+
+Una necesidad se conserva en lenguaje de usuario; un requisito expresa qué debe lograr el producto y cómo se comprobará. Para evitar requisitos ambiguos, cada uno se formulará con un sujeto, una acción, una condición, una métrica, unidad, umbral preliminar, fuente y método de verificación. Los umbrales no se inventarán: se definirán con resultados de indagación, análisis de riesgo, cotizaciones y pruebas de concepto.
+
+| Necesidad | Requisito formulado para la siguiente fase | Evidencia requerida antes de fijar el umbral |
+|---|---|---|
+| N-01 | El sistema impedirá o mitigará los escenarios de exposición identificados como no aceptables. | Matriz de riesgos, arquitectura seleccionada y prueba de controles. |
+| N-02 | El sistema guiará y explicará los pasos de cada escenario didáctico seleccionado. | Resultados de tareas, resultados de aprendizaje y revisión docente. |
+| N-03 | El sistema advertirá configuraciones incorrectas previamente definidas. | Catálogo de errores y prueba con usuarios. |
+| N-04 | El repositorio contendrá documentación actualizada de cada módulo permitido. | Lista documental, versión de hardware/firmware y revisión de pares. |
+| N-05 | El sistema exportará un registro mínimo por práctica. | Campos solicitados por docentes y prueba de recuperación de información. |
+| N-06 y N-07 | El sistema podrá prepararse, guardarse y mantenerse dentro de las restricciones institucionales. | Inventario, cotizaciones, tiempos observados y estrategia de mantenimiento. |
