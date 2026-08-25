@@ -14,7 +14,7 @@ El proyecto desarrolla un prototipo didactico para laboratorio. No sustituye un 
 |---|---|
 | `01_Gestion_del_Proyecto/` | Cronograma, presupuesto, actas, permisos e instrumentos de indagacion aprobados. |
 | `02_DHF_Proceso_Diseno/Fase_1_Investigacion/` | Problema, marco teorico, estado del arte, necesidades y evidencia de entrevistas/encuestas. |
-| `02_DHF_Proceso_Diseno/Fase_2_Conceptual/` | Casa de la Calidad, funciones, alternativas y matrices de seleccion. |
+| `02_DHF_Proceso_Diseno/Fase_2_Conceptual/` | Perfil de usuario, Requerimientos Casa de la Calidad, funciones, alternativas y matrices de seleccion. |
 | `02_DHF_Proceso_Diseno/Fase_3_Diseno_Detalle/` | Requisitos finales, analisis de riesgo, BOM, protocolos y justificacion ingenieril. |
 | `02_DHF_Proceso_Diseno/Fase_4_Validacion/` | Protocolos, resultados y analisis de validacion. |
 | `03_Ingenieria_Tecnica/` | Fuentes editables: calculos, electronica, CAD y firmware. |
