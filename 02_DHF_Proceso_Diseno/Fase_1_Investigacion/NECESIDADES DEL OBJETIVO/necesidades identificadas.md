@@ -1,4 +1,4 @@
-# Necesidades y objetivos de diseño
+# Necesidades identificadas y objetivos de diseño
 
 ## Objetivo de diseño
 

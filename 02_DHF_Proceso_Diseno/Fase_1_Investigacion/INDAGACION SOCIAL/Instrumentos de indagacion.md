@@ -1,4 +1,4 @@
-# Indagacion social, necesidades y objetivos de diseño
+# Instrumentos de indagación social y necesidades
 
 ## Objetivo de la indagacion
 

@@ -1,4 +1,4 @@
-# Referentes contextuales y estado del arte
+# Estado del arte: referentes contextuales
 
 ## Contexto normativo y regulatorio
 

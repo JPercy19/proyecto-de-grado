@@ -1,4 +1,4 @@
-# Marco teorico, conceptual y estado del arte
+# Bibliografía consolidada y marco ampliado
 
 ## Proposito y delimitacion
 

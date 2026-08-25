@@ -1,4 +1,4 @@
-# Referentes conceptuales
+# Marco teórico: referentes conceptuales
 
 ## Seguridad eléctrica
 

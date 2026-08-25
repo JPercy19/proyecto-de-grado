@@ -24,11 +24,11 @@ El proyecto desarrolla un prototipo didactico para laboratorio. No sustituye un 
 ## Documentos iniciales
 
 - [`Base de investigacion y proceso de diseno`](02_DHF_Proceso_Diseno/Fase_1_Investigacion/Base_investigacion_y_proceso_diseno.md)
-- [`Indagacion social`](02_DHF_Proceso_Diseno/Fase_1_Investigacion/01_Indagacion_social.md)
-- [`Necesidades y objetivos de diseno`](02_DHF_Proceso_Diseno/Fase_1_Investigacion/02_Necesidades_y_objetivos_de_diseno.md)
-- [`Referentes conceptuales`](02_DHF_Proceso_Diseno/Fase_1_Investigacion/03_Referentes_conceptuales.md)
-- [`Referentes contextuales y estado del arte`](02_DHF_Proceso_Diseno/Fase_1_Investigacion/04_Referentes_contextuales_estado_del_arte.md)
-- [`Marco teorico, conceptual y estado del arte`](02_DHF_Proceso_Diseno/Fase_1_Investigacion/Marco_teorico_estado_del_arte.md)
+- [`Indagacion social`](02_DHF_Proceso_Diseno/Fase_1_Investigacion/INDAGACION%20SOCIAL/indagacion%20social.md)
+- [`Necesidades identificadas`](02_DHF_Proceso_Diseno/Fase_1_Investigacion/NECESIDADES%20DEL%20OBJETIVO/necesidades%20identificadas.md)
+- [`Arbol de objetivos`](02_DHF_Proceso_Diseno/Fase_1_Investigacion/NECESIDADES%20DEL%20OBJETIVO/Arbol%20de%20objetivos.md)
+- [`Marco teorico`](02_DHF_Proceso_Diseno/Fase_1_Investigacion/REFERENTES%20CONCEPTUALES%20Y%20CONTEXTUALES/Marco%20teorico.md)
+- [`Estado del arte`](02_DHF_Proceso_Diseno/Fase_1_Investigacion/REFERENTES%20CONCEPTUALES%20Y%20CONTEXTUALES/Estado%20del%20arte.md)
 - [`Indagacion social y necesidades`](02_DHF_Proceso_Diseno/Fase_1_Investigacion/Indagacion_social_y_necesidades.md)
 - [`Informe del proyecto conforme a la guia DB1`](05_Reporte_Final_ABET/Informe_proyecto_DB1.md)
 

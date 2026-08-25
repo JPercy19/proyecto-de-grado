@@ -10,11 +10,13 @@ Esta delimitacion permite un proyecto realizable y eticamente defendible: se apr
 
 ## Documentos de la fase de investigacion
 
-1. [Indagacion social](01_Indagacion_social.md)
-2. [Necesidades y objetivos de diseno](02_Necesidades_y_objetivos_de_diseno.md)
-3. [Referentes conceptuales](03_Referentes_conceptuales.md)
-4. [Referentes contextuales y estado del arte](04_Referentes_contextuales_estado_del_arte.md)
-5. [Marco teorico, conceptual y estado del arte con bibliografia consolidada](Marco_teorico_estado_del_arte.md)
+1. [Indagacion social](INDAGACION%20SOCIAL/indagacion%20social.md)
+2. [Instrumentos de indagacion](INDAGACION%20SOCIAL/Instrumentos%20de%20indagacion.md)
+3. [Necesidades identificadas](NECESIDADES%20DEL%20OBJETIVO/necesidades%20identificadas.md)
+4. [Arbol de objetivos](NECESIDADES%20DEL%20OBJETIVO/Arbol%20de%20objetivos.md)
+5. [Marco teorico](REFERENTES%20CONCEPTUALES%20Y%20CONTEXTUALES/Marco%20teorico.md)
+6. [Estado del arte](REFERENTES%20CONCEPTUALES%20Y%20CONTEXTUALES/Estado%20del%20arte.md)
+7. [Bibliografia consolidada](REFERENTES%20CONCEPTUALES%20Y%20CONTEXTUALES/Bibliografia%20consolidada.md)
 
 ## 1. Introduccion
 

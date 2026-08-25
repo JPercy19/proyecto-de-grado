@@ -1,4 +1,4 @@
-# Indagacion social
+# Indagación social
 
 ## Contexto social y educativo
 
