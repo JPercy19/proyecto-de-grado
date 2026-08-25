@@ -80,6 +80,57 @@ IEC 62366-1, ISO 9241-210 y FDA (2016) aportan el enfoque de factores humanos. E
 | IEC 62366-1; ISO 9241-210; FDA | Analizan uso, contexto y errores de interacción. | Pruebas de usabilidad y prevención de errores de conexión. | No sustituyen la gestión de riesgo eléctrico. |
 | Design Council; Ulrich et al. | Estructuran el proceso de diseño y selección. | Casa de la Calidad, generación de alternativas y matriz ponderada. | No fijan requisitos IEC ni métricas clínicas. |
 
+## Modelo conceptual del prototipo didactico
+
+El modelo conceptual del proyecto parte de una cadena de cinco elementos: **peligro eléctrico, condición de ensayo, cadena de medición, interpretación del resultado y decisión del usuario**. Esta cadena evita una visión reducida en la que el analizador se entiende como una “caja que entrega un número”. Cada elemento condiciona al siguiente. Un peligro eléctrico define por qué se requiere una barrera; una condición de ensayo determina qué ruta se observa; la red y el rango de medición condicionan el valor que se muestra; la interpretación exige conocer el procedimiento; y la decisión final depende del alcance metrológico y del uso previsto.
+
+En un equipo profesional, esta cadena se integra en un procedimiento controlado, un instrumento caracterizado y un sistema de calidad. En el prototipo educativo, la misma cadena se convierte en una experiencia explícita: el estudiante visualiza el escenario, selecciona o confirma la conexión, predice qué espera observar, ejecuta una actividad restringida y explica qué puede y qué no puede concluirse. El aprendizaje se ubica, entonces, en la relación entre variables y no en la repetición de un comando.
+
+La variable independiente de la práctica será el escenario didáctico seleccionado: por ejemplo, continuidad de una ruta de protección simulada, condición de aislamiento representada por una carga segura o modificación controlada de una ruta equivalente de fuga. Las variables dependientes incluyen el resultado visualizado, la secuencia completada, los errores detectados y la explicación del estudiante. Las variables de control son el protocolo, la versión de firmware, la configuración de conectores, el rango, el simulador usado y la supervisión. Esta formulación permite que la validación futura sea reproducible y que los datos no se confundan con resultados clínicos.
+
+## Seguridad electrica como sistema de barreras
+
+La seguridad no depende de un único componente. Desde la perspectiva de ISO 14971, el riesgo se reduce mediante decisiones sucesivas: eliminar el peligro cuando sea posible, reducir su energía, separar físicamente al usuario, detectar estados no permitidos, comunicar advertencias y formar al operador. Aplicado al banco, la primera decisión es no usar pacientes ni equipos clínicos conectados. La segunda es privilegiar simuladores y cargas de baja energía. Solo después se consideran cubiertas, conectores codificados, fusibles, interbloqueos, etiquetas y procedimientos.
+
+Esta jerarquía también permite distinguir entre una función de aprendizaje y una función de protección. Una pantalla puede explicar una conexión, pero no se debe depender exclusivamente de ella para prevenir acceso a una zona peligrosa. Un manual puede advertir una limitación, pero la carcasa, la arquitectura y el firmware deben impedir que una modificación simple convierta el banco en una fuente de riesgo. La matriz de riesgos debe verificar cada control con evidencia: inspección de barreras, prueba funcional de interbloqueo, revisión de firmware, prueba de secuencia y observación de uso.
+
+| Peligro o error | Mecanismo de daño o de interpretación errónea | Control de diseño | Evidencia de verificación |
+|---|---|---|---|
+| Contacto con energía eléctrica | Exposición del usuario durante conexión o modificación. | Simuladores de baja energía, separación física y cubierta. | Inspección, análisis de arquitectura y prueba de acceso. |
+| Energía residual | Contacto después de desconectar o detener una práctica. | Descarga controlada, indicador de estado y procedimiento de cierre. | Prueba de funcionamiento y revisión del protocolo. |
+| Conexión errónea | Lectura no representativa o estado no permitido. | Conectores diferenciados, lista de verificación e interbloqueo lógico. | Escenarios de error y prueba con usuarios. |
+| Interpretación indebida | Uso del resultado para aprobar un equipo clínico. | Advertencia persistente, reporte educativo y ausencia de dictamen clínico. | Revisión de interfaz, reporte y guía docente. |
+| Modificación no autorizada | Pérdida de controles o comportamiento no documentado. | Módulos restringidos, control de versiones y guía de cambios. | Auditoría documental y revisión física. |
+
+## De la medicion a la interpretacion responsable
+
+La medición es una comparación entre un fenómeno y una referencia bajo un método definido. Por eso, una lectura de corriente no es independiente del circuito, del instrumento, del rango, del tiempo de estabilización ni de la red de medición. IEC 60990 es relevante porque evita presentar la medición de corriente de contacto o de protección como una conexión directa e indiferenciada. El valor debe acompañarse de una representación del montaje y de una explicación del propósito de la red utilizada.
+
+La trazabilidad añade otro nivel: pregunta si el resultado se relaciona, mediante una cadena documentada, con referencias reconocidas. La incertidumbre pregunta qué tan amplio es el intervalo razonable asociado al resultado. La regla de decisión pregunta cómo se toma una decisión cuando existe incertidumbre alrededor de un límite. El banco puede enseñar estos conceptos por medio de reportes y comparaciones cualitativas; no debe simular una trazabilidad que no posee. Si se implementa una actividad de “conforme/no conforme” debe etiquetarse como un ejercicio sobre la lógica de decisión usando valores de simulación, no como un dictamen sobre un equipo real.
+
+La decisión de incluir campos de configuración y versión en el registro deriva de este análisis. Un estudiante debe poder volver a una práctica y responder: qué simulador se usó, qué escenario se seleccionó, qué conexiones fueron confirmadas, qué resultado se obtuvo y por qué se interpretó de esa manera. Esto convierte el reporte en evidencia de aprendizaje y permite al docente identificar si un error procede del concepto, de la conexión o de la secuencia.
+
+## Arquitectura funcional y modularidad
+
+La arquitectura propuesta se puede describir mediante seis módulos: interfaz de usuario y guía; control y lógica de seguridad; simulador o carga de práctica; interfaz protegida de ensayo; adquisición y visualización; y registro/documentación. La separación modular no es solamente una decisión de mantenimiento. Permite que el estudiante observe qué información circula entre módulos, que el equipo docente sustituya un simulador sin rediseñar la interfaz y que las actualizaciones de firmware tengan trazabilidad.
+
+La modularidad debe ser selectiva. Los módulos de baja tensión, interfaz y software pueden documentarse y reemplazarse con guías claras. Los módulos que determinen aislamiento, protección o interacción con energía potencialmente peligrosa requieren controles adicionales de acceso y cambios. La contribución de la arquitectura abierta no está en que todos los componentes sean modificables, sino en que la frontera entre lo modificable y lo restringido sea visible, justificada y documentada.
+
+| Módulo | Función pedagógica | Función de seguridad | Documentación mínima |
+|---|---|---|---|
+| Interfaz y guía | Explicar objetivo, conexiones, pasos y resultado. | Mostrar advertencias y bloquear secuencias no permitidas. | Flujo de pantallas, mensajes y prueba de usabilidad. |
+| Control | Coordinar escenarios y registro. | Verificar estados permitidos y registrar eventos. | Diagrama de estados, firmware y control de versiones. |
+| Simulador/carga | Representar condiciones de práctica repetibles. | Limitar energía y evitar exposición a riesgos clínicos. | Esquemático, parámetros, procedimiento de prueba. |
+| Interfaz protegida | Separar conexiones del usuario y del circuito de práctica. | Conectores codificados, barreras y acceso restringido. | Plano físico, etiquetas y análisis de riesgo. |
+| Adquisición | Convertir señales en información observable. | Mantener aislamiento y rangos definidos cuando aplique. | Diagrama de bloques y método de verificación. |
+| Registro | Conservar evidencia de la práctica y reflexión. | Evitar que el reporte se interprete como certificado. | Formato de reporte y advertencia de alcance. |
+
+## Fundamento de la evaluacion de aprendizaje
+
+La evaluación didáctica requiere instrumentos coherentes con el objetivo. Un pretest breve puede identificar conocimiento previo de rutas de protección, condiciones de ensayo y alcance de una medición. Durante la práctica, una rúbrica puede valorar preparación, conexión, uso de la guía, reconocimiento de advertencias y explicación. Un postest o tarea de transferencia puede evaluar si el estudiante interpreta un escenario nuevo sin limitarse a repetir la secuencia ensayada.
+
+La usabilidad debe evaluarse de forma complementaria. Un cuestionario de satisfacción puede recoger percepción, pero una prueba de tareas revela si la interfaz es comprensible. Métricas útiles son tasa de finalización de tarea, número y tipo de errores, tiempo de preparación, necesidad de ayuda, comprensión de advertencias y calidad de la explicación final. El docente puede evaluar además si la plataforma permite supervisar grupos, recuperar registros y mantener el ritmo de la clase.
+
 ## Referencias
 
 Chagas, A. M. (2018). Haves and have nots must find a better way: The case for open scientific hardware. *PLOS Biology, 16*(9), e3000014. https://doi.org/10.1371/journal.pbio.3000014

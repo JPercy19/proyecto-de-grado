@@ -60,6 +60,55 @@ La brecha de diseño se define como la necesidad de una herramienta que combine 
 
 Esta contribución se validará con una comparación documentada y con usuarios del laboratorio. La plataforma será pertinente si permite ejecutar escenarios seguros, explicar cómo se configura una prueba, conservar evidencia de la práctica y demostrar mejora en tareas seleccionadas. No será suficiente que el circuito funcione; debe demostrar utilidad pedagógica, límites de seguridad claros y viabilidad para el contexto institucional.
 
+## Evolucion del problema: de la prueba profesional a la experiencia de aprendizaje
+
+La evolución de los analizadores de seguridad eléctrica responde a necesidades de servicio: reducir la variabilidad de procedimientos, acelerar tareas repetitivas, guardar resultados y apoyar la gestión de equipos. Por esa razón, los productos comerciales concentran su valor en la integración funcional, protección, portabilidad y trazabilidad de operaciones. Esa evolución es relevante para el proyecto, pero no define por sí sola una solución educativa. Un estudiante puede completar una secuencia automatizada sin comprender qué representa cada etapa, qué condición de ensayo está activa o qué limitaciones tiene el resultado.
+
+La revisión de referentes permite plantear una diferencia entre **fidelidad funcional** y **fidelidad pedagógica**. La fidelidad funcional se refiere a la cercanía de una plataforma con los métodos o interfaces de un instrumento profesional. La fidelidad pedagógica se refiere a la capacidad de hacer visible el razonamiento, provocar predicción, permitir error seguro, dar retroalimentación y exigir explicación. El prototipo no necesita maximizar la primera para aportar al aprendizaje; debe seleccionar el nivel de fidelidad funcional que permita una experiencia segura y comprensible.
+
+Esta distinción orienta la selección de escenarios. Un escenario con señales equivalentes o una falla controlada puede tener menos realismo que un ensayo conectado a red, pero puede ser más útil en una primera práctica si permite observar causa y efecto sin introducir un riesgo desproporcionado. A medida que el estudiante demuestre competencia y el laboratorio cuente con protocolos autorizados, se podrán considerar escenarios de mayor complejidad. La progresión no debe ser una decisión improvisada: debe responder a resultados de aprendizaje y al análisis de riesgo.
+
+## Criterios de comparacion y evidencia requerida
+
+El benchmark debe evitar comparaciones de marketing. Cada celda de la matriz competitiva debe indicar la fuente, la fecha de consulta y si el dato procede de un manual, ficha técnica, cotización o demostración observada. Las especificaciones de exactitud, incertidumbre, protección y cumplimiento no se transferirán de un referente al prototipo. La comparación servirá para identificar decisiones de interfaz, documentación y experiencia de uso, no para afirmar superioridad técnica sin evidencia.
+
+| Criterio | Pregunta de comparacion | Fuente válida | Uso en la decision de diseño |
+|---|---|---|---|
+| Uso previsto | ¿Para qué contexto declara el fabricante el producto? | Manual o ficha oficial vigente. | Definir con claridad el alcance educativo del banco. |
+| Secuencia de prueba | ¿Cómo organiza preparación, ejecución y cierre? | Manual de usuario y observación autorizada. | Diseñar flujo de práctica y lista de verificación. |
+| Registro | ¿Qué contexto acompaña el resultado? | Manual, formato de reporte o demostración. | Definir campos mínimos de registro educativo. |
+| Interfaz física | ¿Cómo diferencia conexiones, accesorios y zonas de usuario? | Fotografías oficiales, manual y observación. | Elegir codificación, etiquetas y disposición física. |
+| Seguridad declarada | ¿Qué advertencias y restricciones de uso comunica? | Manual y documentación de seguridad. | Redactar advertencias y controles de acceso. |
+| Mantenimiento | ¿Qué accesorios, repuestos o actualizaciones requiere? | Manual, soporte y cotización. | Definir modularidad, BOM y estrategia de mantenimiento. |
+| Costo | ¿Cuál es costo de adquisición y operación? | Cotización con fecha y condiciones. | Fijar restricción económica realista. |
+
+## Referentes educativos y pedagogicos
+
+Los kits de enseñanza de bioinstrumentación constituyen un referente disímil porque su valor no se mide por cumplir una función clínica, sino por permitir que un estudiante explore, construya y evalúe. Nandram y Foster (2025) muestran que los kits disponibles son heterogéneos: cambian la tecnología, la forma de documentación, los niveles de costo y la evidencia de efectividad. La contribución de esa revisión es establecer que un kit debe evaluarse como parte de un sistema de aprendizaje, con guía docente, material de apoyo, posibilidades de réplica y resultados de aprendizaje explícitos.
+
+Santos-Diaz et al. (2024) aporta un caso de aprendizaje basado en retos en bioinstrumentación. El valor de esta fuente es metodológico: la experiencia de diseño se organiza alrededor de un reto, prototipado, prueba, retroalimentación y reflexión. Para el proyecto, un reto no consiste en “usar el analizador”; consiste en explicar por qué un escenario controlado produce un resultado, qué conexión o condición lo modifica y qué decisión responsable corresponde. Galdames-Calderon et al. (2024) complementan al advertir que el reto debe ser claro, relevante y acompañado por facilitación.
+
+Las fuentes de PBL y aprendizaje activo obligan a valorar la plataforma en dos niveles. En el primer nivel, se evalúa el dispositivo: si es seguro, disponible, mantenible y comprensible. En el segundo, se evalúa la actividad: si plantea objetivos claros, requiere razonamiento, entrega retroalimentación, permite colaboración y recoge evidencia. Un banco técnicamente correcto puede fracasar como recurso educativo si no incluye esta segunda capa.
+
+## Sintesis critica de la brecha
+
+La literatura técnica ofrece normas y analizadores de alto nivel de integración; la literatura de hardware abierto ofrece principios de documentación, acceso y reparación; la literatura educativa ofrece estrategias para aprendizaje activo y evaluación. La brecha aparece en la intersección de los tres campos. No se trata de reproducir un instrumento comercial a menor costo, sino de diseñar una infraestructura de aprendizaje que traduzca conceptos normativos y metrológicos en experiencias controladas.
+
+La contribución proyectada se puede formular en cuatro componentes. Primero, un conjunto de escenarios didácticos de baja energía que represente decisiones y fallas relevantes. Segundo, una arquitectura visible de módulos de baja tensión con documentación suficiente para inspección y mantenimiento. Tercero, una interfaz que guíe la práctica, registre el contexto e impida interpretar el resultado como certificado clínico. Cuarto, un protocolo de evaluación que mida tareas, comprensión y usabilidad.
+
+La originalidad no se sostendrá con la afirmación de que “no existe” un producto similar. Se sostendrá si el análisis muestra que los referentes profesionales no priorizan transparencia pedagógica y que los referentes educativos no integran de forma explícita la lógica de seguridad eléctrica y los límites metrológicos. Esta proposición deberá contrastarse con un benchmark ampliado, manuales vigentes, cotizaciones y evidencia de usuarios.
+
+## Lineas de evaluacion derivadas del estado del arte
+
+| Dimension | Pregunta de evaluación | Evidencia esperada |
+|---|---|---|
+| Seguridad | ¿El escenario de práctica evita exposición no aceptable y comunica sus límites? | Matriz de riesgos, inspección y protocolo de prueba. |
+| Aprendizaje | ¿El estudiante puede configurar, interpretar y explicar el escenario? | Rúbrica, pretest/postest y observación de tarea. |
+| Usabilidad | ¿La interfaz permite completar la práctica con errores controlados? | Prueba de tareas, tasa de error y cuestionario. |
+| Apertura | ¿La documentación permite comprender y mantener módulos autorizados? | Repositorio, BOM, esquemáticos y control de versiones. |
+| Viabilidad | ¿El banco se adapta a presupuesto, tiempo y espacio disponibles? | Cotizaciones, inventario y cronometraje. |
+| Alcance | ¿Usuarios y reportes distinguen uso educativo de uso profesional? | Entrevista, revisión de interfaz y auditoría de reporte. |
+
 ## Referencias
 
 Chagas, A. M. (2018). Haves and have nots must find a better way: The case for open scientific hardware. *PLOS Biology, 16*(9), e3000014. https://doi.org/10.1371/journal.pbio.3000014
