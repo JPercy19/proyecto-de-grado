@@ -1,6 +1,6 @@
 # Requerimientos y especificaciones de producto
 
-Teniendo en cuenta las [Necesidades Identificadas](https://docs.google.com/spreadsheets/d/1sRKxT2LYcmueLegzw7dYRJb0-vBqHHQQ_6qIN7KH1rU/edit?gid=0#gid=0) y el análisis de oportunidades de intervención, se establecen los siguientes requerimientos y especificaciones de producto orientados al diseño de una **plataforma didáctica de arquitectura abierta (analizador de seguridad eléctrica Nexus 601)** dirigida a estudiantes y docentes de Ingeniería Biomédica.
+Teniendo en cuenta las Necesidades Identificadas y el análisis de oportunidades de intervención, se establecen los siguientes requerimientos y especificaciones de producto orientados al diseño de una **plataforma didáctica de arquitectura abierta (analizador de seguridad eléctrica Nexus 601)** dirigida a estudiantes y docentes de Ingeniería Biomédica.
 
 ## Tabla 1. Requerimientos de Producto y Clasificación
 
