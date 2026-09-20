@@ -38,83 +38,137 @@ Las métricas se utilizarán para comparar y evaluar las diferentes alternativas
 
 # B. Benchmarking Técnico
 
-El benchmarking técnico permite comparar las características y capacidades de diferentes analizadores comerciales de seguridad eléctrica para equipos electromédicos. Los referentes seleccionados se utilizan como punto de comparación para identificar funciones relevantes para el desarrollo del prototipo.
+El benchmarking técnico permite comparar las necesidades y características de interacción identificadas para el proyecto con diferentes analizadores comerciales de seguridad eléctrica utilizados como referentes.
 
-Los productos seleccionados corresponden a:
+Los productos seleccionados son:
 
 - **Fluke Biomedical ESA615**
 - **Rigel Medical 288+**
 - **Metrel MI 6601 MediTest**
 
-Las características comparadas se relacionan principalmente con las pruebas contempladas en **IEC 60601-1** e **IEC 62353**, además de funciones de automatización, registro de resultados, comunicación y configuración.
+Estos equipos fueron seleccionados debido a que incorporan diferentes pruebas de seguridad eléctrica para equipos electromédicos y cuentan con funciones relacionadas con IEC 60601-1 e IEC 62353.
 
-> **Nota:** Los valores del benchmarking corresponden a las especificaciones publicadas por los fabricantes. Cuando una característica no se encuentra claramente especificada en la documentación consultada, se indica como `No especificado`.
+> **Nota:** Cuando una característica relacionada con la experiencia de usuario no se encuentra publicada por el fabricante, se indica como **No publicado**. No se realizan estimaciones de variables de usabilidad sin evidencia disponible.
 
-### Tabla de Benchmarking Técnico
+## Tabla de Benchmarking
 
-| N.º | Métrica técnica | Unidad | Fluke ESA615 | Rigel 288+ | Metrel MI 6601 | Fuente |
-|---:|---|---|---|---|---|---|
-| 1 | Soporte de IEC 60601-1 | Sí / No | Sí | Sí | Sí | [1][2][3] |
-| 2 | Soporte de IEC 62353 | Sí / No | Sí | Sí | Sí | [1][2][3] |
-| 3 | Prueba de continuidad de tierra de protección (PE) | Sí / No | Sí | Sí | Sí | [1][2][3] |
-| 4 | Corriente de prueba de PE | mA / A | >200 mA | >200 mA | 200 mA / 25 A | [1][2][3] |
-| 5 | Prueba de resistencia de aislamiento | Sí / No | Sí | Sí | Sí | [1][2][3] |
-| 6 | Tensiones de prueba de aislamiento | VDC | 250 / 500 | 50 / 100 / 250 / 500 | 250 / 500 | [1][2][3] |
-| 7 | Medición de corriente de fuga directa | Sí / No | Sí | Sí | Sí | [1][2][3] |
-| 8 | Medición de corriente de fuga diferencial | Sí / No | Sí | Sí | Sí | [1][2][3] |
-| 9 | Medición de corriente de fuga alternativa | Sí / No | Sí | Sí | Sí | [1][2][3] |
-| 10 | Resolución de medición de fuga | µA | 0,1 µA* | 1 µA | 1 µA | [1][2][3] |
-| 11 | Rango de medición de fuga | µA | Hasta 10.000 | Hasta 9.999* | No especificado | [1][2][3] |
-| 12 | Medición de tensión de red | VAC | 90–264 | 0–300 | Sí | [1][2][3] |
-| 13 | Medición de corriente del equipo | A | 0–20 | 0–16 | Sí | [1][2][3] |
-| 14 | Secuencias de prueba automatizadas | Sí / No | Sí | Sí | Sí | [1][2][3] |
-| 15 | Secuencias de prueba configurables | Sí / No | Sí | Sí | Sí | [1][2][3] |
-| 16 | Almacenamiento de resultados | Sí / No | Sí | Sí | Sí | [1][2][3] |
-| 17 | Comunicación con computador | Sí / No | Sí | Sí | Sí | [1][2][3] |
-| 18 | Configuración para diferentes partes aplicadas | Sí / No | No especificado | No especificado | Sí | [3] |
-| 19 | Interfaz para guiar la ejecución de pruebas | Sí / No | Sí | Sí | Sí | [1][2][3] |
-| 20 | Arquitectura abierta documentada | Sí / No | No evidenciada | No evidenciada | No evidenciada | [1][2][3] |
+| N.º | Métrica técnica | Unidad | Fluke ESA615 | Rigel 288+ | Metrel MI 6601 |
+|---:|---|---|---|---|---|
+| 1 | Tensión máxima accesible durante la operación | V | No publicado | No publicado | No publicado |
+| 2 | Corriente máxima accesible durante la operación | mA | No publicado | No publicado | No publicado |
+| 3 | Conexiones correctamente identificadas | % | No publicado | No publicado | No publicado |
+| 4 | Montajes correctos en el primer intento | % | No publicado | No publicado | No publicado |
+| 5 | Tiempo de configuración del sistema | min | No publicado | No publicado | No publicado |
+| 6 | Estados del sistema identificables | unid. | Sí | Sí | Sí |
+| 7 | Tiempo de respuesta de la indicación de alerta | s | No publicado | No publicado | No publicado |
+| 8 | Errores con orientación de respuesta | % | No publicado | Sí | Sí |
+| 9 | Variables visibles durante la operación | unid. | No publicado | No publicado | No publicado |
+| 10 | Criterios de verificación disponibles | unid. | Sí | Sí | Sí |
+| 11 | Resultados verificables | % | Sí | Sí | Sí |
+| 12 | Prácticas con información registrada | % | Sí | Sí | Sí |
+| 13 | Tiempo de recuperación de un registro | s | No publicado | No publicado | No publicado |
+| 14 | Pasos que requieren asistencia externa | pasos | No publicado | No publicado | No publicado |
+| 15 | Número total de pasos del procedimiento | pasos | No publicado | No publicado | No publicado |
+| 16 | Eventos inesperados por práctica | eventos/práctica | No publicado | No publicado | No publicado |
 
-\* Los valores pueden depender del método de prueba o de las condiciones especificadas por el fabricante.
+## Funciones observadas en los referentes
 
-### Referentes
+Aunque los fabricantes no publican todas las métricas de experiencia de usuario, sí es posible identificar características relevantes que permiten interpretar el benchmarking.
 
-**Fluke Biomedical ESA615**  
-Analizador portátil de seguridad eléctrica para equipos médicos que incorpora pruebas de tierra de protección, aislamiento, corrientes de fuga y otras pruebas relacionadas con seguridad eléctrica.
+| Característica | Fluke ESA615 | Rigel 288+ | Metrel MI 6601 |
+|---|:---:|:---:|:---:|
+| Pruebas de seguridad eléctrica | Sí | Sí | Sí |
+| IEC 60601-1 | Sí | Sí | Sí |
+| IEC 62353 | Sí | Sí | Sí |
+| Continuidad de tierra | Sí | Sí | Sí |
+| Resistencia de aislamiento | Sí | Sí | Sí |
+| Corrientes de fuga | Sí | Sí | Sí |
+| Secuencias de prueba | Sí | Sí | Sí |
+| Secuencias configurables | Sí | Sí | Sí |
+| Registro de resultados | Sí | Sí | Sí |
+| Comunicación con computador | Sí | Sí | Sí |
+| Guía durante la prueba | Sí | Sí | Sí |
+| Conexiones configurables | No publicado | No publicado | Sí |
+| Arquitectura abierta | No evidenciada | No evidenciada | No evidenciada |
 
-**Rigel Medical 288+**  
-Analizador orientado a pruebas de seguridad eléctrica de equipos médicos, con diferentes métodos de medición de fuga y posibilidad de utilizar secuencias de prueba.
+## Interpretación
 
-**Metrel MI 6601 MediTest**  
-Analizador de seguridad eléctrica para equipos médicos con funciones de prueba, secuencias automáticas, almacenamiento y comunicación.
+El benchmarking muestra que los equipos comerciales cuentan con un conjunto importante de funciones destinadas a facilitar la ejecución de pruebas de seguridad eléctrica.
 
-### Interpretación del benchmarking
+Entre las características comunes se encuentran:
 
-Los tres referentes presentan funciones destinadas a evaluar diferentes aspectos de la seguridad eléctrica de equipos electromédicos. Entre las funciones comunes se encuentran:
-
-- Continuidad de tierra de protección.
-- Resistencia de aislamiento.
-- Corrientes de fuga.
-- Medición de tensión.
+- Ejecución de diferentes pruebas de seguridad eléctrica.
+- Pruebas asociadas a IEC 60601-1 e IEC 62353.
 - Secuencias de prueba.
 - Registro de resultados.
-- Comunicación con sistemas externos.
+- Orientación durante la ejecución.
+- Configuración de diferentes pruebas.
 
-El proyecto de grado toma estas funciones como referencia, pero incorpora un enfoque diferente orientado al **aprendizaje práctico**. Por esta razón, además de las capacidades de medición, se considera importante evaluar la facilidad de comprensión, la interacción con el usuario, la posibilidad de modificar las pruebas y la documentación de la arquitectura.
+Sin embargo, los fabricantes no publican normalmente métricas de usabilidad como el porcentaje de montajes correctos en el primer intento, el tiempo de configuración o el número de pasos que requieren asistencia.
+
+Estas variables representan una oportunidad para el proyecto, ya que el prototipo tiene como propósito adicional facilitar el **aprendizaje práctico** y no únicamente realizar las mediciones.
+
+El benchmarking permite, por tanto, tomar las capacidades de los equipos comerciales como referencia funcional y evaluar posteriormente si el prototipo puede ofrecer una interacción más adecuada para un contexto educativo.
 
 ### Referencias
 
 [1] Fluke Biomedical. *ESA615 Electrical Safety Analyzer*.  
 https://www.flukebiomedical.com/products/electrical-safety-analyzers/esa615-electrical-safety-analyzer
 
-[2] Seaward / Rigel Medical. *Rigel 288+ Electrical Safety Analyzer*.  
-https://www.seaward.com/us/support/medical/288-plus/
+[2] Rigel Medical. *Rigel 288+ Electrical Safety Analyzer*.  
+https://www.rigelmedical.com/product/406a910-288-plus/
 
 [3] Metrel. *MI 6601 MediTest – Medical Electrical Safety Tester*.  
 https://www.metrel.si/en/shop/PAT/medical-testers/mi-6601-meditest.html
 
-[4] International Electrotechnical Commission. *IEC 62353:2014 – Medical electrical equipment – Recurrent test and test after repair of medical electrical equipment*.  
-https://webstore.iec.ch/en/publication/6913
+# C. Tabla de especificaciones objetivo
 
-[5] International Electrotechnical Commission. *IEC 60601-1 – Medical electrical equipment – Part 1: General requirements for basic safety and essential performance*.  
-https://webstore.iec.ch/en/publication/67497
+Las especificaciones objetivo establecen las metas que deberá alcanzar el prototipo a partir de las necesidades identificadas y del benchmarking realizado.
+
+Los valores definidos corresponden a **objetivos de diseño del prototipo**. No deben interpretarse como valores de certificación o como sustitutos de los límites establecidos por IEC 60601-1 o IEC 62353.
+
+## Tabla de especificaciones objetivo
+
+| N.º | Métrica técnica | Unidad | Dirección de mejora | Valor marginal | Valor ideal | Método de verificación |
+|---:|---|---|---|---|---|---|
+| 1 | Tensión máxima accesible durante la operación | V | Disminuir | ≤ 50 V en partes accesibles | Minimizar exposición a tensión peligrosa | Medición de tensión en partes accesibles durante diferentes condiciones de operación. |
+| 2 | Corriente máxima accesible durante la operación | mA | Disminuir | ≤ 1 mA | Minimizar corriente accesible | Medición de corriente en puntos accesibles bajo condiciones de prueba controladas. |
+| 3 | Conexiones correctamente identificadas | % | Aumentar | ≥ 90 % | ≥ 98 % | Prueba con usuarios realizando conexiones y registro de conexiones correctas. |
+| 4 | Montajes correctos en el primer intento | % | Aumentar | ≥ 80 % | ≥ 95 % | Evaluación con usuarios realizando el montaje sin asistencia. |
+| 5 | Tiempo de configuración del sistema | min | Disminuir | ≤ 10 min | ≤ 5 min | Medir el tiempo desde el inicio del montaje hasta que el sistema esté listo para ejecutar la prueba. |
+| 6 | Estados del sistema identificables | unid. | Aumentar | Todos los estados principales | Todos los estados relevantes | Evaluar mediante prueba de reconocimiento de estados por parte de los usuarios. |
+| 7 | Tiempo de respuesta de la indicación de alerta | s | Disminuir | ≤ 2 s | ≤ 1 s | Medir el tiempo entre la aparición de la condición anormal y la generación de la alerta. |
+| 8 | Errores con orientación de respuesta | % | Aumentar | ≥ 80 % | 100 % | Provocar errores controlados y verificar que el sistema indique una acción de respuesta. |
+| 9 | Variables visibles durante la operación | unid. | Aumentar | Variables necesarias para la prueba | Todas las variables relevantes | Verificar que las variables necesarias para interpretar la prueba estén disponibles durante su ejecución. |
+| 10 | Criterios de verificación disponibles | unid. | Aumentar | ≥ 3 criterios | Todos los criterios definidos para cada prueba | Revisar las indicaciones disponibles para comprobar la correcta ejecución de cada procedimiento. |
+| 11 | Resultados verificables | % | Aumentar | ≥ 90 % | 100 % | Comparar los resultados obtenidos con valores de referencia conocidos. |
+| 12 | Prácticas con información registrada | % | Aumentar | ≥ 90 % | 100 % | Ejecutar prácticas y comprobar que los resultados queden almacenados correctamente. |
+| 13 | Tiempo de recuperación de un registro | s | Disminuir | ≤ 30 s | ≤ 10 s | Medir el tiempo necesario para localizar y visualizar una práctica almacenada. |
+| 14 | Pasos que requieren asistencia externa | pasos | Disminuir | ≤ 3 pasos | 0 pasos | Observar una práctica realizada por un usuario sin asistencia directa. |
+| 15 | Número total de pasos del procedimiento | pasos | Disminuir | ≤ 15 pasos | ≤ 10 pasos | Contabilizar los pasos necesarios para completar una práctica representativa. |
+| 16 | Eventos inesperados por práctica | eventos/práctica | Disminuir | ≤ 2 | 0 | Registrar comportamientos inesperados durante pruebas repetidas del sistema. |
+
+## Criterios de interpretación
+
+### Valor marginal
+
+El valor marginal representa el nivel mínimo de desempeño que debería alcanzar el prototipo para considerar que la característica cumple de manera aceptable con el objetivo de diseño.
+
+### Valor ideal
+
+El valor ideal representa el desempeño deseado para obtener una experiencia de uso más segura, clara y autónoma.
+
+### Dirección de mejora
+
+- **Aumentar:** un valor mayor representa una mejora.
+- **Disminuir:** un valor menor representa una mejora.
+
+## Consideraciones
+
+Los valores objetivo relacionados con seguridad eléctrica deberán revisarse y validarse durante el diseño electrónico y las pruebas experimentales. Los límites definitivos de seguridad no deben establecerse únicamente a partir del benchmarking comercial.
+
+Las métricas de interacción y usabilidad deberán validarse mediante pruebas con usuarios, mientras que las métricas eléctricas deberán verificarse mediante mediciones instrumentales y procedimientos de prueba controlados.
+
+El objetivo del proyecto es desarrollar un **prototipo de analizador de seguridad eléctrica de arquitectura abierta para el aprendizaje práctico**, por lo que el desempeño técnico debe evaluarse junto con la facilidad de comprensión, configuración, ejecución y revisión de las pruebas.
+
+> **Importante:** alcanzar los valores objetivo definidos en esta tabla no implica que el prototipo esté certificado ni que pueda utilizarse como sustituto de un analizador comercial certificado.
