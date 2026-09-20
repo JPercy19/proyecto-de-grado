@@ -57,285 +57,73 @@ Los nueve conceptos se organizaron posteriormente de acuerdo con tres criterios 
 
 ---
 
-# Matriz morfológica — Generación de medios
+Teniendo en cuenta los **Requerimientos Funcionales y no Funcionales** tomados en cuenta de las necesidades identificadas se realiza la siguiente:
 
-| Función principal (subsistema) | Medio 1 (M1) | Medio 2 (M2) | Medio 3 (M3) | Medio 4 (M4) |
+## 1. Matriz Morfológica (Generación de Medios)
+
+Esta tabla descompone el **Nexus 601** en sus subsistemas principales (las Funciones) y propone diferentes formas técnicas de lograrlo (los Medios).
+
+| Función Principal (Subsistema) | Medio 1 (M1) | Medio 2 (M2) | Medio 3 (M3) | Medio 4 (M4) |
 |---|---|---|---|---|
-| **F1. Medición de seguridad eléctrica** | Módulos de medición independientes | Circuitos de medición integrados en una placa | Módulos intercambiables según la prueba | Módulos con acondicionamiento y protección de señales |
-| **F2. Conexión del equipo bajo prueba** | Bornes banana de 4 mm identificados | Panel de conectores modulares | Borneras de conexión independientes | Cables con conectores específicos para cada prueba |
-| **F3. Conmutación y condiciones de prueba** | Relés electromecánicos | Relés + circuitos de protección | Módulos de conmutación independientes | Conmutación controlada por microcontrolador |
-| **F4. Procesamiento y adquisición** | Microcontrolador + ADC externo | Módulos de adquisición independientes | Microcontrolador + aplicación en PC mediante USB | Sistema de adquisición dedicado por prueba |
-| **F5. Interfaz y guía de aprendizaje** | Pantalla TFT/LCD integrada | Pantalla LCD + botones físicos | Aplicación de escritorio mediante USB | Interfaz gráfica en PC con guía paso a paso |
-| **F6. Registro de resultados** | Tarjeta microSD | Memoria interna | Almacenamiento en PC mediante USB | Archivo CSV generado por el software |
+| **F1. Visualizar ruta de corriente y Red MD** (Req 1, 11) | Carcasa superior en acrílico transparente + Pistas de LEDs físicos en placa. | Pantalla táctil a color con animación interactiva del flujo. | Panel de aluminio serigrafiado con recortes y retroiluminación. | App móvil/Tablet con Realidad Aumentada escaneando el equipo. |
+| **F2. Procesamiento de datos y Gráficas** (Req 4, 8, 12) | Microcontrolador (ESP32/Arduino) + Software en PC externo. | Computadora de placa única (Raspberry Pi) todo integrado. | Envío de datos vía WiFi/Bluetooth a Servidor/Nube (IoT). | Microcontrolador básico + Pantalla inteligente (Nextion). |
+| **F3. Interacción y Modo Guiado** (Req 2, 5) | Botones físicos, perilla (encoder rotativo) y display LCD 20x4. | Pantalla táctil capacitiva integrada en el chasis. | Interfaz 100% controlada desde un software de escritorio (USB). | Aplicación en Tablet anclada al equipo. |
+| **F4. Inyección de Fallas y Seguridad** (Req 6, 10) | Relés mecánicos visibles + Botón físico de Parada de Emergencia (E-Stop). | Contactores de estado sólido (SSR) + E-Stop digital en pantalla. | Interruptores manuales físicos (switches) + Portafusibles expuestos. | Módulo externo acoplable solo para el profesor (Llave física). |
+| **F5. Conexión de Partes Aplicadas** (Req 9) | Bornes tipo banana de 4mm agrupados por colores y símbolos IEC. | Conectores industriales modulares multipin (tipo DB9/VGA). | Placa de conexión con pines magnéticos (tipo Pogo-pin). | Cables fijos retráctiles integrados en la carcasa. |
+| **F6. Arquitectura Estructural (Chasis)** (Req 3) | Impresión 3D combinada (Cuerpo en PLA / Bases en TPU antivibración). | Maletín rígido tipo Pelican (Portátil, equipo integrado en la base). | Diseño híbrido (Paneles de MDF cortados a láser + tapa acrílica). | Gabinete estándar metálico comercial modificado. |
 
 ---
 
-# Conceptos integrados
+## 2. Conceptos generados
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/1149de9b-fc2b-4e3c-b571-9675b81a7fb6" />
 
-A partir de la tabla de combinación de conceptos se generaron nueve alternativas. Cada una combina una alternativa de las seis funciones principales.
 
----
+## Concepto 1: El "Híbrido de Laboratorio"
 
-## 1. Conceptos de mínimo costo
+**Combinación:**  
+`F1-M1 + F2-M1 + F3-M3 + F4-M1 + F5-M1 + F6-M3`
 
-### Concepto 2 — "Analizador de laboratorio básico"
-
-**Combinación:** F1-M2 + F2-M1 + F3-M1 + F4-M1 + F5-M3 + F6-M3
-
-- **Medición de seguridad eléctrica:**  
-  Circuitos de medición integrados en una sola placa.
-
-- **Conexión del equipo bajo prueba:**  
-  Bornes tipo banana de 4 mm identificados.
-
-- **Conmutación y condiciones de prueba:**  
-  Relés electromecánicos.
-
-- **Procesamiento y adquisición:**  
-  Microcontrolador + ADC externo.
-
-- **Interfaz y guía de aprendizaje:**  
-  Aplicación de escritorio mediante USB.
-
-- **Registro de resultados:**  
-  Almacenamiento en PC mediante USB.
-
-### Concepto 5 — "Analizador de sobremesa modular"
-
-**Combinación:** F1-M2 + F2-M3 + F3-M1 + F4-M1 + F5-M3 + F6-M3
-
-- **Medición de seguridad eléctrica:**  
-  Circuitos de medición integrados en una sola placa.
-
-- **Conexión del equipo bajo prueba:**  
-  Borneras de conexión independientes.
-
-- **Conmutación y condiciones de prueba:**  
-  Relés electromecánicos.
-
-- **Procesamiento y adquisición:**  
-  Microcontrolador + ADC externo.
-
-- **Interfaz y guía de aprendizaje:**  
-  Aplicación de escritorio mediante USB.
-
-- **Registro de resultados:**  
-  Almacenamiento en PC mediante USB.
-
-### Concepto 6 — "Analizador básico con control físico"
-
-**Combinación:** F1-M1 + F2-M1 + F3-M2 + F4-M1 + F5-M2 + F6-M1
-
-- **Medición de seguridad eléctrica:**  
-  Módulos de medición independientes.
-
-- **Conexión del equipo bajo prueba:**  
-  Bornes tipo banana de 4 mm identificados.
-
-- **Conmutación y condiciones de prueba:**  
-  Relés con circuitos de protección.
-
-- **Procesamiento y adquisición:**  
-  Microcontrolador + ADC externo.
-
-- **Interfaz y guía de aprendizaje:**  
-  Pantalla LCD + botones físicos.
-
-- **Registro de resultados:**  
-  Tarjeta microSD.
-
-### Justificación del criterio
-
-Los conceptos 2, 5 y 6 se agrupan en **mínimo costo** porque utilizan principalmente componentes electrónicos comerciales y una arquitectura relativamente sencilla. Los conceptos 2 y 5 aprovechan un computador externo para realizar la visualización y el almacenamiento, reduciendo la cantidad de hardware que debe integrarse en el prototipo. El concepto 6 incorpora una interfaz y almacenamiento locales, pero mantiene componentes convencionales como relés, microcontrolador, ADC y tarjeta microSD.
+**Descripción:**  
+Un equipo de sobremesa con laterales en corte láser y una tapa de acrílico transparente. Se ven los relés y los LEDs iluminarse. Tiene bornes banana estándar. No tiene pantalla propia, se conecta por USB a un PC del laboratorio donde un software guía al estudiante y grafica todo.
 
 ---
 
-## 2. Conceptos más fáciles de implementar
+## Concepto 2: La "Consola Todo-en-Uno" (Stand-alone)
 
-### Concepto 1 — "Analizador de laboratorio"
+**Combinación:**  
+`F1-M2 + F2-M2 + F3-M2 + F4-M1 + F5-M1 + F6-M1`
 
-**Combinación:** F1-M1 + F2-M1 + F3-M1 + F4-M1 + F5-M2 + F6-M1
-
-- **Medición de seguridad eléctrica:**  
-  Módulos de medición independientes.
-
-- **Conexión del equipo bajo prueba:**  
-  Bornes tipo banana de 4 mm identificados.
-
-- **Conmutación y condiciones de prueba:**  
-  Relés electromecánicos.
-
-- **Procesamiento y adquisición:**  
-  Microcontrolador + ADC externo.
-
-- **Interfaz y guía de aprendizaje:**  
-  Pantalla LCD + botones físicos.
-
-- **Registro de resultados:**  
-  Tarjeta microSD.
-
-### Concepto 9 — "Analizador modular conectado a PC"
-
-**Combinación:** F1-M3 + F2-M2 + F3-M3 + F4-M3 + F5-M3 + F6-M3
-
-- **Medición de seguridad eléctrica:**  
-  Módulos intercambiables según la prueba.
-
-- **Conexión del equipo bajo prueba:**  
-  Panel de conectores modulares.
-
-- **Conmutación y condiciones de prueba:**  
-  Módulos de conmutación independientes.
-
-- **Procesamiento y adquisición:**  
-  Microcontrolador + aplicación en PC mediante USB.
-
-- **Interfaz y guía de aprendizaje:**  
-  Aplicación de escritorio mediante USB.
-
-- **Registro de resultados:**  
-  Almacenamiento en PC mediante USB.
-
-### Justificación del criterio
-
-Los conceptos 1 y 9 se consideran **más fáciles de implementar** porque pueden construirse a partir de módulos electrónicos y componentes comerciales disponibles. Además, permiten separar las funciones de medición y procesamiento sin requerir un sistema embebido excesivamente complejo.
-
-El concepto 9 resulta particularmente favorable para el desarrollo de arquitectura abierta, ya que los módulos de medición pueden probarse individualmente y posteriormente integrarse a una unidad principal.
+**Descripción:**  
+Un diseño moderno e integrado, impreso totalmente en 3D (PLA). Cuenta con una pantalla táctil grande embebida en ángulo que muestra las animaciones, las gráficas y la separación normativa. No necesita PC externo.
 
 ---
 
-## 3. Conceptos complejos
+## Concepto 3: El "Maletín de Campo"
 
-### Concepto 7 — "Estación modular autónoma"
+**Combinación:**  
+`F1-M4 + F2-M4 + F3-M1 + F4-M3 + F5-M1 + F6-M2`
 
-**Combinación:** F1-M3 + F2-M2 + F3-M4 + F4-M2 + F5-M1 + F6-M1
-
-- **Medición de seguridad eléctrica:**  
-  Módulos intercambiables según la prueba.
-
-- **Conexión del equipo bajo prueba:**  
-  Panel de conectores modulares.
-
-- **Conmutación y condiciones de prueba:**  
-  Conmutación controlada por microcontrolador.
-
-- **Procesamiento y adquisición:**  
-  Módulos de adquisición independientes.
-
-- **Interfaz y guía de aprendizaje:**  
-  Pantalla TFT/LCD integrada.
-
-- **Registro de resultados:**  
-  Tarjeta microSD.
-
-### Concepto 8 — "Analizador didáctico integrado"
-
-**Combinación:** F1-M4 + F2-M4 + F3-M4 + F4-M4 + F5-M4 + F6-M3
-
-- **Medición de seguridad eléctrica:**  
-  Módulos con acondicionamiento y protección de señales.
-
-- **Conexión del equipo bajo prueba:**  
-  Cables con conectores específicos para cada prueba.
-
-- **Conmutación y condiciones de prueba:**  
-  Conmutación controlada por microcontrolador.
-
-- **Procesamiento y adquisición:**  
-  Sistema de adquisición dedicado por prueba.
-
-- **Interfaz y guía de aprendizaje:**  
-  Interfaz gráfica en PC con guía paso a paso.
-
-- **Registro de resultados:**  
-  Almacenamiento en PC mediante USB.
-
-### Justificación del criterio
-
-Los conceptos 7 y 8 se clasifican como **complejos** debido a la integración de diferentes subsistemas y al nivel de control requerido. El concepto 7 requiere módulos intercambiables, adquisición independiente, conmutación controlada y una interfaz integrada. El concepto 8 incorpora además circuitos de acondicionamiento y protección específicos, conectores particulares para cada prueba y sistemas de adquisición dedicados.
-
-Estos elementos aumentan la cantidad de hardware que debe diseñarse, integrarse y validarse, así como la complejidad del firmware y del software de control.
+**Descripción:**  
+Integrado dentro de una maleta rígida tipo Pelican. Es ideal para llevarlo entre salones. El panel es de aluminio negro con los diagramas grabados (serigrafía retroiluminada). Usa interruptores de palanca gruesos ("switches" físicos) para que el profesor induzca las fallas manualmente.
 
 ---
 
-## 4. Conceptos de mayor costo
+## Concepto 4: El "Minimalista IoT"
 
-### Concepto 3 — "Estación modular autónoma avanzada"
+**Combinación:**  
+`F1-M1 + F2-M3 + F3-M4 + F4-M2 + F5-M3 + F6-M1`
 
-**Combinación:** F1-M3 + F2-M2 + F3-M3 + F4-M2 + F5-M1 + F6-M1
-
-- **Medición de seguridad eléctrica:**  
-  Módulos intercambiables según la prueba.
-
-- **Conexión del equipo bajo prueba:**  
-  Panel de conectores modulares.
-
-- **Conmutación y condiciones de prueba:**  
-  Módulos de conmutación independientes.
-
-- **Procesamiento y adquisición:**  
-  Módulos de adquisición independientes.
-
-- **Interfaz y guía de aprendizaje:**  
-  Pantalla TFT/LCD integrada.
-
-- **Registro de resultados:**  
-  Tarjeta microSD.
-
-### Concepto 4 — "Plataforma didáctica completa"
-
-**Combinación:** F1-M4 + F2-M4 + F3-M4 + F4-M4 + F5-M4 + F6-M3
-
-- **Medición de seguridad eléctrica:**  
-  Módulos con acondicionamiento y protección de señales.
-
-- **Conexión del equipo bajo prueba:**  
-  Cables con conectores específicos para cada prueba.
-
-- **Conmutación y condiciones de prueba:**  
-  Conmutación controlada por microcontrolador.
-
-- **Procesamiento y adquisición:**  
-  Sistema de adquisición dedicado por prueba.
-
-- **Interfaz y guía de aprendizaje:**  
-  Interfaz gráfica en PC con guía paso a paso.
-
-- **Registro de resultados:**  
-  Almacenamiento en PC mediante USB.
-
-### Justificación del criterio
-
-Los conceptos 3 y 4 se clasifican como de **mayor costo** debido a que requieren un mayor número de módulos, circuitos de adquisición y elementos de conexión especializados. El concepto 3 incorpora módulos independientes de medición y adquisición junto con una interfaz integrada. El concepto 4 requiere sistemas de acondicionamiento y protección específicos, adquisición dedicada y conectores particulares para cada prueba.
-
-Estos elementos pueden incrementar tanto el costo de los componentes como el tiempo requerido para fabricación, integración y validación.
+**Descripción:**  
+Una caja transparente impresa en resina o ensamblada en acrílico, extremadamente limpia. Funciona como un módulo de adquisición "tonto" basado en ESP32 que envía todo de forma inalámbrica a una Tablet. Las partes aplicadas se conectan magnéticamente.
 
 ---
 
-# 5. Concepto seleccionado para desarrollo posterior
+## Concepto 5: La "Estación Modular Encastrable"
 
-A partir de la comparación entre costo, facilidad de implementación, complejidad y coherencia con el objetivo de arquitectura abierta, se propone continuar el desarrollo conceptual tomando como base el:
+**Combinación:**  
+`F1-M3 + F2-M1 + F3-M3 + F4-M4 + F5-M2 + F6-M1`
 
-## "Analizador modular conectado a PC"
-
-Este concepto combina:
-
-- Módulos de medición intercambiables.
-- Conectores modulares y claramente identificados.
-- Módulos de conmutación independientes.
-- Microcontrolador para adquisición y control.
-- Comunicación USB con un computador.
-- Interfaz gráfica orientada al aprendizaje.
-- Registro de resultados en formato abierto.
-
-La selección no implica que las demás alternativas sean descartadas desde el punto de vista técnico. Los demás conceptos sirven como alternativas de diseño y permiten identificar diferentes maneras de resolver las funciones del producto.
-
-La arquitectura seleccionada permite además mantener una separación clara entre **hardware de medición, control, software e interfaz**, facilitando futuras modificaciones y la incorporación de nuevas pruebas de seguridad eléctrica.
+**Descripción:**  
+Una base principal a la que se le pueden apilar módulos (como bloques) dependiendo de si se va a medir partes aplicadas tipo B, BF o CF, o si se añade el módulo de fallas del profesor.
 
 ---
-
-# Relación con el objetivo del proyecto
-
-El concepto generado busca responder al objetivo general de diseñar un **prototipo de analizador de seguridad eléctrica de arquitectura abierta para el aprendizaje práctico de pruebas de seguridad eléctrica en equipos electromédicos**, tomando como referencia los procedimientos y criterios aplicables de **IEC 60601-1 e IEC 62353**.
-
-La generación de conceptos permite pasar de las necesidades identificadas y las funciones del sistema a una configuración física y funcional que posteriormente puede ser evaluada mediante los criterios de selección de conceptos, la matriz QFD y las especificaciones objetivo del producto.
